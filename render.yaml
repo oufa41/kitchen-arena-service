@@ -1,0 +1,19 @@
+# Render Blueprint. Dashboard → New → Blueprint → pick this repo.
+services:
+  - type: web
+    name: kitchen-arena-service
+    runtime: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: GEMINI_MODEL
+        value: gemini-3.1-flash-lite
+      - key: GEMINI_FALLBACK_MODEL
+        value: gemini-3.5-flash
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: IMDAD_SIGNING_SECRET
+        sync: false

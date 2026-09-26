@@ -1,0 +1,16 @@
+{
+  "name": "kitchen-arena-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Accept/reject decision service for the Imdad Kitchen Arena",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/",
+    "dev:worker": "wrangler dev --port 8787 --local",
+    "deploy": "wrangler deploy"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

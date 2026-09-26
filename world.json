@@ -1,0 +1,147 @@
+{
+  "menu": [
+    {
+      "item": "classic_burger",
+      "price_aed": 32.0,
+      "cook_minutes": 6,
+      "ingredients": {
+        "bun": 1,
+        "patty": 1,
+        "cheese": 1
+      },
+      "allergens": [
+        "gluten",
+        "dairy"
+      ]
+    },
+    {
+      "item": "cheesy_fries",
+      "price_aed": 18.0,
+      "cook_minutes": 4,
+      "ingredients": {
+        "potato": 2,
+        "cheese": 1
+      },
+      "allergens": [
+        "dairy"
+      ]
+    },
+    {
+      "item": "chicken_wrap",
+      "price_aed": 28.0,
+      "cook_minutes": 5,
+      "ingredients": {
+        "tortilla": 1,
+        "chicken": 1,
+        "sesame_sauce": 1
+      },
+      "allergens": [
+        "gluten",
+        "sesame"
+      ]
+    },
+    {
+      "item": "satay_skewers",
+      "price_aed": 34.0,
+      "cook_minutes": 7,
+      "ingredients": {
+        "chicken": 1,
+        "peanut_sauce": 1
+      },
+      "allergens": [
+        "peanut"
+      ]
+    },
+    {
+      "item": "garden_salad",
+      "price_aed": 24.0,
+      "cook_minutes": 2,
+      "ingredients": {
+        "greens": 1,
+        "tomato": 1
+      },
+      "allergens": []
+    },
+    {
+      "item": "falafel_box",
+      "price_aed": 26.0,
+      "cook_minutes": 5,
+      "ingredients": {
+        "falafel": 3,
+        "tahini": 1,
+        "flatbread": 1
+      },
+      "allergens": [
+        "sesame",
+        "gluten"
+      ]
+    }
+  ],
+  "opening_stock": [
+    {
+      "ingredient": "bun",
+      "quantity": 55
+    },
+    {
+      "ingredient": "cheese",
+      "quantity": 70
+    },
+    {
+      "ingredient": "chicken",
+      "quantity": 70
+    },
+    {
+      "ingredient": "falafel",
+      "quantity": 120
+    },
+    {
+      "ingredient": "flatbread",
+      "quantity": 40
+    },
+    {
+      "ingredient": "greens",
+      "quantity": 50
+    },
+    {
+      "ingredient": "patty",
+      "quantity": 55
+    },
+    {
+      "ingredient": "peanut_sauce",
+      "quantity": 30
+    },
+    {
+      "ingredient": "potato",
+      "quantity": 80
+    },
+    {
+      "ingredient": "sesame_sauce",
+      "quantity": 45
+    },
+    {
+      "ingredient": "tahini",
+      "quantity": 40
+    },
+    {
+      "ingredient": "tomato",
+      "quantity": 50
+    },
+    {
+      "ingredient": "tortilla",
+      "quantity": 45
+    }
+  ],
+  "kitchen": {
+    "stations": 4,
+    "max_promise_minutes": 30,
+    "shift_minutes": 240
+  },
+  "scoring": {
+    "penalty_allergy_incident_aed": 500.0,
+    "penalty_false_allergy_flag_aed": 25.0,
+    "penalty_failed_order_x_value": 2.0,
+    "penalty_waste_x_value": 0.35,
+    "penalty_per_minute_late_aed": 3.0,
+    "penalty_lost_key_account_x_value": 2.0
+  }
+}

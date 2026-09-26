@@ -1,0 +1,20 @@
+name = "kitchen-arena-service"
+main = "worker.js"
+compatibility_date = "2026-09-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Non-secret settings. The key is set with: npx wrangler secret put GEMINI_API_KEY
+[vars]
+GEMINI_MODEL = "gemini-3.1-flash-lite"
+GEMINI_FALLBACK_MODEL = "gemini-3.5-flash"
+
+# One Durable Object holds the kitchen state. Single instance by contract.
+[durable_objects]
+bindings = [{ name = "KITCHEN", class_name = "Kitchen" }]
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Kitchen"]
+
+[observability]
+enabled = true
