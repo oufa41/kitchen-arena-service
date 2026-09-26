@@ -107,14 +107,14 @@ Set `PORT` to what the host expects (Spaces uses 7860).
 
 Same 150 practice orders, three runs.
 
-| | Run 1, before fixes | Run 2 | Run 3 |
-|---|---|---|---|
-| Score | 1,549 AED | 3,848 AED | see dashboard |
-| Missed allergies | 4 | 0 | 0 |
-| False allergy flags | 1 | 0 | 0 |
-| Key accounts rejected | 1 | 0 | 0 |
-| Cancelled after cooking | 6 | 1 | 1 |
-| Late minutes | 0 | 2 | 2 |
+| | Run 1, before fixes | Run 2
+|---|---|--
+| Score | 1,549 AED | 3,848 AED
+| Missed allergies | 4 | 0 
+| False allergy flags | 1 | 0 
+| Key accounts rejected | 1 | 0 
+| Cancelled after cooking | 6 | 1
+| Late minutes | 0 | 2 
 
 The untouched starter code, which accepts everything, scores about
 −15,400 AED on the same orders.
